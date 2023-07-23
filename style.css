@@ -7,8 +7,51 @@
   }
 
   body {
-    background-color: black !important;
+    font-family: 'Lato', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #111111;
+}
+ h1, h2, h3, h4,h5, p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 800 !important;
+    letter-spacing: -1px !important;
+    font-family: 'Lato', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
   }
-  h1{
-    color:red !important;
-  }
+
+.container-fluid .img {
+    max-width: 20% !important;
+}
+
+.container-fluid .article {
+    max-width: 50%;
+}
+
+.container-fluid .img  img{
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+}
+
+main {
+        max-width: 67%;
+       
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+.container-fluid .img {
+    display: none;
+}
+   .container-fluid .article, .main {
+    max-width: 100%;
+} 
+}
