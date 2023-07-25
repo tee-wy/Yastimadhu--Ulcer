@@ -29,7 +29,7 @@
     max-width: 50%;
 }
 
-.container-fluid .img  img{
+.container-fluid .img  img, img{
  display: block;
     margin-left: auto;
     margin-right: auto;
@@ -37,12 +37,18 @@
     height: auto;
     max-width: 275px;
 }
-
 main {
-        max-width: 67%;
-       
+        max-width: 67%;    
 }
 
+article {
+    max-width: 67%;
+    padding: 2rem !important;
+   
+}
+.tst .p-test {
+    border: 2px solid black;
+}
 
 
 
