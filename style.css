@@ -1,4 +1,5 @@
 @import "./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf";
 
 * {
     box-sizing: border-box;
@@ -6,58 +7,148 @@
     padding: 0;
   }
 
-  body {
-    font-family: 'Lato', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    color: #111111;
-}
- h1, h2, h3, h4,h5, p{
-    text-align: justify;
-    text-justify: inter-word;
-    font-weight: 800 !important;
-    letter-spacing: -1px !important;
-    font-family: 'Lato', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 
-  }
-
-.container-fluid .img {
-    max-width: 20% !important;
+    -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
 }
 
-.container-fluid .article {
-    max-width: 50%;
-}
+/* THE - LOGO */
+.logo .img  img{
+    display: block;
+       margin-left: 1rem;
+       margin-right: 45rem;
+       width: 100%;
+       height: auto;
+       max-width: 270px;
+   }
+   .container-fluid .svn h4 {
+    background-color: #c7c7c7;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 10px;
+    }
+    .logo .svn {
+        max-width: 50% ;
+    }
 
-.container-fluid .img  img, img{
- display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-    max-width: 275px;
+   main {
+    max-width: 67%;    
 }
-main {
-        max-width: 67%;    
+.main h1 {
+    font-size: 2.5rem;
+    line-height: 48px;
+    font-family: 'Montserrat', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    letter-spacing: 2px;
+    font-weight: 900;
+    }
+main .container-fluid h1 {
+    font-family: 'Montserrat', Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    letter-spacing: -1px;
 }
-
+     
 article {
-    max-width: 67%;
-    padding: 2rem !important;
-   
+max-width: 67%;
+padding: 2rem;
 }
-.tst .p-test {
+
+article p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 22px;
+}
+
+.tst img {
+width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.tst .tst-p {
     border: 2px solid black;
 }
+.tst .tst-p p{
+    font-size: 14px;
+    padding: 2px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+.logos  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.logos .i, .ii img {
+    width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+
+
 
 
 
 
 @media screen and (max-width: 700px) {
-.container-fluid .img {
+.logo .img {
     display: none;
 }
-   .container-fluid .article, .main {
-    max-width: 100%;
-} 
+.main h1 {
+    font-size: 1.2rem;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    }
+
+    article {
+        max-width: 100%;
+        padding: 2rem;
+    }
+    main {
+        max-width: 100%;    
+}
+
+.logo .svn {
+    max-width: 100% ;
+}
+
+.tst img {
+      max-width: 100%;
+      height: auto;
+
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+    .logos  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
